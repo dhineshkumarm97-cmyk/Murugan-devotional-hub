@@ -1,0 +1,6 @@
+{
+  "name": "Lord Murugan Devotional Hub",
+  "description": "A devotional space for Lord Murugan devotees to connect, enjoy bhajans, temple content, and share feedback or partnership proposals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

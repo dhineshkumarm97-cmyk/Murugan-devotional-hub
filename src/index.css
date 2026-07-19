@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cinzel", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-gold-50: #fefcf6;
+  --color-gold-100: #fbf4e2;
+  --color-gold-200: #f6e3b5;
+  --color-gold-300: #eed081;
+  --color-gold-400: #e4b54e;
+  --color-gold-500: #d69727;
+  --color-gold-600: #b9761d;
+  --color-gold-700: #965518;
+  --color-gold-800: #7b4217;
+  --color-gold-900: #643516;
+  --color-gold-950: #3b1c09;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 12px rgba(214, 151, 39, 0.4);
+  }
+  .box-glow {
+    box-shadow: 0 0 20px rgba(214, 151, 39, 0.15);
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(10%); }
+  50% { transform: translateX(-50%); }
+  100% { transform: translateX(10%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 35s ease-in-out infinite;
+}
+
